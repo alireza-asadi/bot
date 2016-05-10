@@ -5,12 +5,12 @@ URL = require('socket.url')
 JSON = require('dkjson')
 HTTPS = require('ssl.https')
 ----config----
-local bot_api_key = ""
+local bot_api_key = "235611862:AAHBsPJuyoMS8Yry_co1ua0BU1vEYdS9y24"
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
-local start = [[HI
+local start = [[سلام
 `/bold text`
-return *bold* text
+return متن کلفت
 
 `/italic text`
 return _italic_ text
@@ -55,7 +55,7 @@ _just send a photo_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {}-- put your id here
+  local admins = {121916460}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
